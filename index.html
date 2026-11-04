@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12231d" />
+    <meta name="description" content="A focused, interactive Java fundamentals course with bite-sized lessons, practice checks and a primitive conversion sandbox." />
+    <title>Java Trail — Learn by doing</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2312231d'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='monospace' font-size='34' font-weight='bold' fill='%23b8ec78'%3E%3E_%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Java Trail home"><span class="brand-mark">&gt;_</span><span>java<span class="brand-accent">trail</span></span></a>
+        <div class="topbar-meta"><span class="status-dot"></span> YOUR LEARNING SPACE <span class="meta-divider"></span><span>JAVA FUNDAMENTALS</span></div>
+        <button class="help-button" id="about-button" type="button" aria-haspopup="dialog">How it works <span>↗</span></button>
+      </header>
+
+      <main id="home">
+        <section class="welcome">
+          <div class="welcome-copy"><p class="eyebrow"><span class="eyebrow-star">✳</span> A PRACTICAL LEARNING PATH</p><h1>Build your Java<br /><span>muscle memory.</span></h1><p class="welcome-lede">Small lessons, real examples, and quick practice. Pick up where you left off, one concept at a time.</p><div class="welcome-tags"><span><i>01</i> CORE CONCEPTS</span><span><i>02</i> PRACTICE AS YOU GO</span><span><i>03</i> YOUR PACE, ALWAYS</span></div></div>
+          <div class="welcome-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb-core"><span>J</span><small>JAVA</small></div><div class="floating-code code-top">int score = 42;</div><div class="floating-code code-bottom">System.out.println(score);</div><span class="art-star star-one">✳</span><span class="art-star star-two">✦</span><div class="art-index">LEARNING PATH <span>— 06 MODULES</span></div></div>
+        </section>
+
+        <section class="dashboard" aria-label="Learning dashboard">
+          <aside class="lesson-sidebar"><div class="sidebar-head"><div><p class="eyebrow">YOUR CURRICULUM</p><h2>Java basics</h2></div><span class="course-badge">6 PARTS</span></div><div class="overall-progress"><div class="progress-label"><span>Course progress</span><b id="progress-text">0%</b></div><div class="progress-track"><span id="progress-fill"></span></div></div><nav id="lesson-nav" class="lesson-nav" aria-label="Lessons"></nav><div class="sidebar-note"><span>✳</span><p>One step at a time.<br /><em>You’ve got this.</em></p></div></aside>
+          <section class="lesson-view" id="lesson-view" aria-live="polite" aria-busy="false"></section>
+        </section>
+      </main>
+      <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">&gt;_</span><span>java<span class="brand-accent">trail</span></span></a><p>Built for curious minds, one concept at a time.</p><span>NO ACCOUNT · NO PAYWALL · JUST PRACTICE</span></footer>
+    </div>
+
+    <dialog id="about-dialog" class="about-dialog"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><p class="eyebrow"><span class="eyebrow-star">✳</span> A NOTE BEFORE YOU START</p><h2>Learning should feel<br /><em>like progress.</em></h2><p>Each part is a short lesson with a Java example and one quick check. Choose a lesson from the left, read at your own pace, and mark it complete when you’re ready.</p><p>Your progress stays in this browser only. No account is needed. The conversion sandbox demonstrates primitive numeric conversions; it is a teaching aid, not a full Java compiler.</p><button class="dialog-primary" id="start-learning" type="button">Let's get started <span>↗</span></button></dialog>
+  </body>
+</html>
